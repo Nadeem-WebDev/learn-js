@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutorial</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas{
+            border: 2px dotted rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+
+    <script>
+        let canvas=document.querySelector("canvas");
+        canvas.height=window.innerHeight-4;
+        canvas.width=window.innerWidth-4;
+
+        let ctx=canvas.getContext("2d");
+
+        // ***to draw rectangle***
+        // ctx.fillRect(100,100,200,100);
+        // ctx.fillStyle="rgba(0,255,0,0.5)";
+        // ctx.fillRect(150,300,60,80);
+        
+        // ***to draw lines***
+        // ctx.beginPath();
+        // ctx.moveTo(300,325);
+        // ctx.lineTo(400,510);
+        // ctx.lineTo(40,410);
+        // ctx.lineTo(300,325);
+        // ctx.strokeStyle='red';
+        // ctx.stroke()
+        
+        // ***to draw circle***
+        // ctx.beginPath();
+        // ctx.strokeStyle="blue"
+        // ctx.fillStyle='#faf'
+        // ctx.arc(350,250,30,0,Math.PI*2,true);
+        // ctx.fill();
+        // ctx.stroke();
+        let x=300,y=300;
+        let dx=1,dy=1;
+
+        function bouncingBall() {
+                // ctx.clearRect(0,0,innerWidth,innerHeight);
+                ctx.beginPath();
+                // let rando=Math.floor(Math.random()*255);
+                // let x=Math.random()*innerWidth;
+                // let y=Math.random()*innerHeight;
+                ctx.arc(x,y,30,0,Math.PI*2,false);
+                if (x>innerWidth-32 || x<32) {
+                    dx=-dx;
+                }
+                if (y>innerHeight-32 || y<32) {
+                    dy=-dy;
+                }
+                x+=dx,y+=dy;
+                // ctx.fill();
+                ctx.stroke();
+                // console.log(x,y)
+                setTimeout(bouncingBall,1);
+                // bouncingBall()
+        }
+
+        // bouncingBall()
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "name":"nadeem",
+    "age":20,
+    "favSports":["cricket","kabaddi","football"],
+    "address":{
+        "city":"mumbai",
+        "pincode":400104
+    }
+}

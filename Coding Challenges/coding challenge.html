@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding challenge</title>
+</head>
+<body>
+    <marquee behavior="sliding" direction="right" height="100px" loop="50" scrollamount="25" scrolldelay=""><mark>Coding Challenges</mark></marquee>
+    <h1>hello</h1>
+    
+
+
+    <script>
+                                                // ***coding challenges***
+        // #(1,2)/27
+        // let markWeight = 95;
+        // let markHeight = 1.88;
+
+        // let johnWeight = 85;
+        // let johnHeight = 1.76;
+
+        // function bmiFinder(weight,height) {
+        //     return weight/height**2;
+        // }
+        // let markBMI = bmiFinder(markWeight,markHeight);
+        // let johnBMI = bmiFinder(johnWeight,johnHeight);
+
+        // let markHigherBMI = markBMI > johnBMI;
+
+        // console.log(markBMI,johnBMI)
+        // console.log(markHigherBMI);
+
+        // if (markBMI > johnBMI) {
+        //     console.log(`Mark's BMI is (${markBMI.toFixed(2)}) higher than John's BMI (${johnBMI.toFixed(2)})`)
+        // } else {
+        //     console.log(`John's BMI is (${johnBMI.toFixed(2)}) higher than Mark's BMI (${markBMI.toFixed(2)})`)
+        // }
+
+
+
+
+
+        // #3/27
+        // let dolphin = [97,112,101];
+        // let koala = [109,95,106];
+
+        // function avg(teamScr){
+        //     let scr = 0;
+        //     for (let i = 0; i < teamScr.length; i++) {
+        //         scr += teamScr[i];    
+        //     }
+        //     return (scr/teamScr.length).toFixed(2);
+        // }
+        
+        // dolphinAvgScr = avg(dolphin);
+        // koalaAvgScr = avg(koala);
+
+        // if (dolphinAvgScr >= 100 || koalaAvgScr >= 100) {
+        //     if (dolphinAvgScr>koalaAvgScr) {
+        //         console.log(`dolphin wins  with the score of : ${dolphinAvgScr}-${koalaAvgScr}`);
+                
+        //     } else if(dolphinAvgScr<koalaAvgScr){
+        //         console.log(`koala wins with the score of : ${koalaAvgScr}-${dolphinAvgScr}`);
+        //     } else {
+        //         console.log(`its a tie!! dolphin: ${dolphinAvgScr} - ${koalaAvgScr} :koala`)
+        //     }
+        // } else {
+        //     console.log(`no one wins because both team's score is less than 100. dolphin: ${dolphinAvgScr} - ${koalaAvgScr} :koala`)
+        // }
+
+
+
+        // #4/27
+        // let bill =Number(prompt("enter the bill value: "));
+        // let tip = bill>=50 && bill<=300 ? 15 : 20;
+        // console.log(`The bill was ${bill}, the tip was ${bill*(tip/100)}, and the total value ${bill+bill*(tip/100)}`);
+
+
+        // #5/27
+        // let dolphin = [85,54,41];
+        // let koala = [23,34,27];
+
+        // calcAverage = (teamScr)=>{
+        //     let scr = 0;
+        //     for (let i = 0; i < teamScr.length; i++) {
+        //         scr += teamScr[i];    
+        //     }
+        //     return (scr/teamScr.length).toFixed(2);
+        // }
+        
+        // dolphinAvgScr = calcAverage(dolphin);
+        // koalaAvgScr = calcAverage(koala);
+
+        // function checkWinner(avgDolphins,avgKoalas) {
+        // if (avgDolphins >= avgKoalas*2 || avgKoalas >= avgDolphins*2) {
+        //     if (avgDolphins>avgKoalas) {
+        //         console.log(`dolphin wins  with the score of : ${avgDolphins}-${avgKoalas}`);
+                
+        //     } else if(dolphinAvgScr<koalaAvgScr){
+        //         console.log(`koala wins with the score of : ${avgKoalas}-${avgDolphins}`);
+        //     } else {
+        //         console.log(`its a tie!! dolphin: ${avgDolphins} - ${avgKoalas} :koala`)
+        //     }
+        // } else {
+        //     console.log(`no one wins because no team's avg score is twice of other team. dolphin: ${avgDolphins} - ${avgKoalas} :koala`)
+        // }
+        // }
+
+        // checkWinner(dolphinAvgScr,koalaAvgScr);
+
+
+
+        // #6/27
+        // let bills = [];
+        // let tips = [];
+        // let total = [];
+        // function calcTip(billValue) {
+        //     let tipPercent = billValue>=50 && billValue<=300 ? 15 : 20;
+        //     tip = billValue*(tipPercent/100);
+
+        //     bills.push(billValue);
+        //     tips.push(tip);
+        //     total.push(billValue+tip)
+
+        //     return tip;
+        // }
+
+        // calcTip(50);
+        // console.log(bills);
+        // console.log(tips);
+        // console.log(total);
+
+
+        // #7/27
+        // mark = {
+        //     fullName : "Mark Miller",
+        //     mass : 78,
+        //     height : 1.69,
+        //     calcBMI(m,h){
+        //         bmi = (m/(h**2)).toFixed(2);
+        //         return bmi;
+        //     },
+        // }
+        // mark.BMI = mark.calcBMI(mark.mass,mark.height)
+        // console.log(mark.BMI)
+
+        // john = {
+        //     fullName : "John Smith",
+        //     mass : 92,
+        //     height : 1.95,
+        //     calcBMI(m,h){
+        //         bmi = (m/(h**2)).toFixed(2);
+        //         return bmi;
+        //     },
+        // }
+        // john.BMI = john.calcBMI(john.mass,john.height)
+
+        // if (john.BMI>mark.BMI) {
+        //     console.log(`${john.fullName}'s BMI(${john.BMI}) is higher than ${mark.fullName}'s BMI(${mark.BMI})`)
+        // } else {
+        //     console.log(`${mark.fullName}'s BMI(${mark.BMI}) is higher than ${john.fullName}'s BMI(${john.BMI})`)
+        // }
+
+
+
+        // #8/27
+        // let bills = [22,295,176,440,37,105,10,1100,86,52];
+        // let tips = [];
+        // let totals = [];
+        // function calcTip(billValue) {
+        //     let tipPercent = billValue>=50 && billValue<=300 ? 15 : 20;
+        //     let tip = billValue*(tipPercent/100);
+        //     let total = billValue+tip;
+
+        //     tips.push(tip);
+        //     totals.push(total)
+
+        //     return tip;
+        // }
+
+        // for (let i = 0; i < bills.length; i++) {
+        //     calcTip(bills[i]);
+        //     console.log(`bill:${bills[i]} tip:${tips[i]} total:${totals[i]}`);
+        // }
+
+        // console.log(tips);
+        // console.log(totals);
+        // ***bonus***
+        // function calcAverage(arr){
+        //     let sum = 0;
+        //     for (let i = 0; i < arr.length; i++) {
+        //         sum += arr[i];
+        //     }
+        //     console.log("avg:",sum/arr.length)
+        // }
+        // calcAverage(totals);
+
+
+
+        // #9/27
+        // data1 = [17,21,23];
+        // data2 = [12,5,-5,0,4];
+
+        // let printForecast = (arr)=>{
+        //     for (let i = 0; i < arr.length; i++) {
+        //         console.log(`${arr[i]}^oC in ${i+1} days`);
+        //     }
+        // }
+        // printForecast(data1);
+        // printForecast(data2);
+
+
+        // #(10,11,12,13)/23
+
+
+
+        // #14/23
+        // let txtArea = document.createElement('textarea');
+        // document.body.append(txtArea);
+        // txtArea.setAttribute("cols","30")
+        // txtArea.setAttribute("rows","10")
+        
+        // let btn = document.createElement('button');
+        // document.body.append(btn);
+        // btn.innerHTML = "enter";
+        
+        // btn.addEventListener("click",function (){
+        //     if (txtArea.value == "") {
+        //         console.log("text area is empty")
+        //     } else {
+        //         let arrInp = txtArea.value.split('\n');
+        //         for (let i = 0; i < arrInp.length; i++) {
+        //             let undscrtxt = arrInp[i];
+        //             let txtArrr = undscrtxt.split("_");
+        //             cmltxt = txtArrr[0].toLowerCase()+(txtArrr[1])[0].toUpperCase()+txtArrr[1].slice(1).toLowerCase();
+        //             console.log(cmltxt)
+        //             for (let j = 0; j <= i; j++) {
+        //                 console.log("✅");
+        //             }   
+        //         }
+        //     }
+        // });
+
+
+        // #15/27
+        // let btn = document.createElement('button');
+        // document.body.append(btn);
+        // btn.innerHTML = "Answer Poll";
+
+        // let poll = {
+        //     question: "What is your favourite programming language?",
+        //     options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+        //     answers: new Array(4).fill(0),
+        //     displayResults(type){
+        //         console.log(`result after the poll is : ${type}`)
+        //     },
+        //     registerNewAnswer(){
+        //         ans = Number(prompt(this.question+"\n"+this.options.join('\n')));
+        //         switch (ans) {
+        //             case 0:
+        //                 poll.answers[0] += 1;
+        //                 break;
+        //             case 1:
+        //                 poll.answers[1] += 1;
+        //                 break;
+        //             case 2:
+        //                 poll.answers[2] += 1;
+        //                 break;
+        //             case 3:
+        //                 poll.answers[3] += 1;
+        //                 break;
+                
+        //             default:
+        //                 console.log(`answer ${ans} wouldn't make sense, right?`)
+        //                 break;
+        //         }
+        //         this.displayResults(this.answers);
+        //     }
+        // };
+        // ***bind() is used to ensure 'this' keyword refers to the object not to the callback function***
+        // btn.addEventListener("click",poll.registerNewAnswer.bind(poll));
+
+
+
+
+        // #16/27
+        // (function () {
+        //     const header = document.querySelector('h1');
+        //     header.style.color = 'red';
+        //     document.body.addEventListener("click",function(){
+        //         header.style.color = 'blue';
+        //     })
+        // })();
+
+
+        // #17/27
+        // let dogsJulia=[3, 5, 2, 12, 7];
+        // let dogsKate=[4, 1, 15, 8, 3];
+
+        // function checkDogs(juliaDogs,kateDogs) {
+        //     correctedJuliaDogs = juliaDogs.slice();
+        //     correctedJuliaDogs.splice(0,1);
+        //     correctedJuliaDogs.splice(correctedJuliaDogs.length-2,2);
+
+        //     allDogs = correctedJuliaDogs.concat(kateDogs);
+        //     for (let i = 0; i < allDogs.length; i++) {
+        //         if (allDogs[i]<3) {
+        //             console.log(`Dog number ${i} is a puppy🐶& ${allDogs[i]} years old`)
+        //         } else {
+        //             console.log(`Dog number ${i} is an adult & ${allDogs[i]} years old`);
+        //         }
+        //     }
+        //     console.log(allDogs.length);
+        // }
+
+        // checkDogs(dogsJulia,dogsKate);
+
+
+
+        // #18/27
+        // let data1 = [5,2,4,1,15,8,3];
+        // let data2 = [16,6,10,5,6,1,4];
+        // function calcAverageHumanAge(ages) {
+        //     humanAge = [];
+        //     for (let i = 0; i < ages.length; i++) {
+        //         if (ages[i]<=2) {
+        //             humanAge[i] = 2*ages[i];
+        //         } else {
+        //             humanAge[i] = 16 + 4*ages[i];
+        //         }
+            
+        //     }
+        //     adultDogsAges = humanAge.filter(age=> age>=18);
+        //     avgAge = 0
+        //     for (const age of adultDogsAges) {
+        //         avgAge += age;
+        //     }
+        //     console.log(`the average human age of all the adult dogs : ${(avgAge/adultDogsAges.length).toFixed(2)}`)
+        //     console.log(adultDogsAges)
+        // }
+
+        // calcAverageHumanAge(data1);
+        // calcAverageHumanAge(data2);
+
+
+        // #19/27
+        
+
+        // #20/27
+        // ***task 1***
+        // const dogs = [
+        //     { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+        //     { weight: 8, curFood: 200, owners: ['Matilda'] },
+        //     { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
+        //     { weight: 32, curFood: 340, owners: ['Michael'] },
+        // ];
+        
+        // ***task 2***
+        // for (let i = 0; i < dogs.length; i++) {
+        //     dogs[i].recommendedFood = (dogs[i].weight**0.75*28).toFixed(2);
+        // }
+        // sarahDog = dogs.find(obj=> obj.owners.includes("Sarah"));
+        // eatingStatus = sarahDog.curFood>sarahDog.recommendedFood ? "eating too much":"eating too little";
+        // console.log(`sarah's dog ${eatingStatus}`,sarahDog.recommendedFood);
+
+
+        // ***task 3***
+        // let ownersEatTooMuch = [];
+        // let ownersEatTooLittle = [];
+
+        // for (const obj of dogs) {
+        //     // console.log(obj.curFood,obj.recommendedFood,obj.recommendedFood*0.9,obj.recommendedFood*1.1)
+        //     if (obj.curFood>obj.recommendedFood) {
+        //         ownersEatTooMuch.push(obj.owners);
+        //     } else {
+        //         ownersEatTooLittle.push(obj.owners);
+        //     }
+        // }
+        
+        // ***task 4***
+        // console.log(`${ownersEatTooMuch.join(' and ')}'s dogs eating too much`);
+        // console.log(`${ownersEatTooLittle.join(' and ')}'s dogs eating too little`);
+
+        // ***task 5***
+        // const isEatingRecommendedAmount = dogs.some((dog) => dog.curFood == dog.recommendedFood);
+        // console.log('Is any dog eating the recommended amount of food?', isEatingRecommendedAmount);
+        
+        // ***task 6***
+        // const isEatingOkayAmount = dogs.some((dog) => dog.curFood >= dog.recommendedFood*0.9 && dog.curFood <= dog.recommendedFood*1.1);
+        // console.log('Is any dog eating the recommended amount of food?', isEatingOkayAmount);
+        
+
+        // ***task 7***
+        // let dogsEatingOkay = [];
+        // for (let i = 0; i < dogs.length; i++) {
+        //     if (dogs[i].curFood >= dogs[i].recommendedFood*0.9 && dogs[i].curFood <= dogs[i].recommendedFood*1.1) {
+        //         dogsEatingOkay.push(`dog ${i}`)
+        //     };
+            
+        // }
+        // console.log(`dogs that are eating okay are : ${dogsEatingOkay.join(",")}`);
+
+        // ***task 8***
+        // let sortedDogs = dogs.slice();
+        // sortedDogs.sort((a, b) => a.recommendedFood - b.recommendedFood);
+        // console.log(sortedDogs);
+
+
+        // #21/27
+        // function Car(make,speed){
+        //     this.make = make,
+        //     this.speed = speed,
+        //     this.accelarte = ()=>{
+        //         this.speed += 10;
+        //         console.log(`${this.make}'s' new speed : ${this.speed}km/h`)
+        //     },
+        //     this.brake = ()=>{
+        //         this.speed -= 5;
+        //         console.log(`${this.make}'s' new speed : ${this.speed}km/h`)
+        //     }
+        // }
+
+        // let car1 = new Car('BMW',120);
+        // let car2 = new Car('Mercedes',95);
+        // car1.accelarte();
+        // car1.accelarte();
+        // car2.accelarte();
+        // car2.accelarte();
+        // car2.brake();
+        // car2.brake();
+        // car1.accelarte();
+        // car1.accelarte();
+        // car1.brake();
+        // car2.accelarte();
+        // car2.accelarte();
+        // car1.brake();
+        // car1.brake();
+        // car1.accelarte();
+
+        // #22/27
+        // let carCl={
+        //     make:"Ford",
+        //     speed:120,
+        //     get speedUs(){
+        //         return this.speed/1.6;
+        //     },
+        //     set speedUs(x){
+        //         this.speed/=1.6;
+        //     }
+        // }
+
+        // console.log(carCl.speedUs);
+        // carCl.speedUs = carCl.speed;
+        // console.log(carCl.speed);
+
+        // #23/27
+    //     function Car(make,speed,charge){
+    //         this.make=make,
+    //         this.speed=speed,
+    //         this.charge=charge,
+    //         this.accelarte = ()=>{
+    //             this.speed += 20;
+    //             this.charge -= 1;
+    //             console.log(`after acceleration ${this.make} going at ${this.speed}km/h, with a charge of ${this.charge}%`)
+    //         },
+    //         this.brake = ()=>{
+    //             this.speed -= 5;
+    //             console.log(`after brake ${this.make}'s' new speed : ${this.speed}km/h`)
+    //         },
+    //         this.chargeTo = (chrg)=>{
+    //             this.charge = chrg;
+    //         }
+    // }
+
+    // let EV=new Car('Tesla',120,23);
+    // console.log(EV.make,EV.speed,EV.charge);
+    // EV.accelarte();
+    // EV.brake();
+    // EV.chargeTo(90);
+    // console.log(EV.charge);
+
+
+    // #24/27
+    // class CarCl{
+        //     constructor(make,speed,charge) {
+    //         this.make=make,
+    //         this.speed=speed,
+    //         this._charge=charge,
+            
+    //     }
+    // }
+    
+    
+    // #(25,26,27)/27
+    
+        
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>
